@@ -1,0 +1,231 @@
+body {
+  background-color: aqua;
+  font-size: 1vw;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  min-width: 1200px;
+  overflow: hidden;
+}
+.title_area {
+  height: 10vw;
+  background-color: black;
+  margin: 20px 0;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+}
+
+h1 {
+  height: 10vw;
+  line-height: 10vw;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+  text-transform: uppercase;
+  font-family: "digital";
+  letter-spacing: 10px;
+  animation: roll 10s linear infinite;
+}
+
+h1 span {
+  color: blue;
+  animation: blink 2s alternate infinite;
+}
+@font-face {
+  font-family: "digital";
+  src: url(../font/LAB_digi.ttf);
+}
+
+@keyframes roll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes blink {
+  from {
+    color: blue;
+  }
+  to {
+    color: aqua;
+  }
+}
+
+.intro_wrap,
+.gall_wrap {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro_wrap {
+  /* height: 100vh; */
+}
+
+.gall_wrap {
+  flex-wrap: wrap;
+}
+
+.intro_wrap .img_box,
+.intro_wrap .desc_box {
+  flex: 1;
+  margin: 20px;
+}
+.intro_wrap .img_box {
+  border-radius: 20px;
+  border: 5px solid black;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 0;
+}
+
+.intro_wrap .desc_box p:hover {
+  background-color: blue;
+}
+.intro_wrap .desc_box p {
+  color: #fff;
+  background-color: black;
+  margin-bottom: 5px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+.intro_wrap .desc_box p.blank {
+  color: transparent;
+}
+.intro_wrap .desc_box p span {
+  color: yellow;
+  margin: 0 20px;
+}
+.subject {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 30px;
+
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sub1 {
+  width: 150px;
+}
+.sub2 {
+  margin-top: 40px;
+  width: 250px;
+}
+.sub3 {
+  margin-top: 40px;
+  width: 200px;
+}
+
+.skill_sec {
+  margin-bottom: 13vh;
+  display: flex;
+}
+.graphic_skill,
+.html_skill {
+  flex: 1;
+  margin: 0 20px;
+}
+.skill_wrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 30px;
+}
+.skill_wrap .skill_box {
+  width: 100px;
+}
+.skill_wrap .skill_box img {
+  width: 100%;
+}
+.skill_wrap .skill_box img.adobe {
+  border: 1px solid rgb(136, 143, 143);
+  border-radius: 20px;
+  font-size: 0;
+}
+.skill_wrap .skill_box span {
+  display: block;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.gall_box {
+  margin-bottom: 40px;
+}
+.gall_box .img_box {
+  width: 300px;
+  height: 300px;
+  border: 5px solid yellow;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 0;
+  transition: 1s;
+  background-color: transparent;
+}
+.gall_box .img_box:hover {
+  background-color: black;
+}
+.intro_wrap .img_box img,
+.gall_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gall_box p {
+  text-align: center;
+}
+
+.sec3.web {
+}
+.web_wrarp {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.web_box {
+  flex: 1;
+  margin: 0 20px;
+}
+.web_box:first-child {
+  margin-left: 0;
+}
+
+.web_box p {
+  text-align: center;
+  margin-top: 20px;
+
+  padding: 15px;
+}
+.web_box .img_box {
+  width: 100%;
+  border: 5px solid yellow;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 0;
+}
+.web_box .img_box:hover {
+  background-color: black;
+}
+.web_box .img_box img {
+  width: 100%;
+  border-radius: 10px;
+}
